@@ -1,8 +1,7 @@
 import React from "react";
 
 const Card = ({ id, name, email, selected, hidden }) => {
-  const isHidden = () =>
-    hidden === null || hidden === id ? "" : "hidden";
+  const isHidden = () => (hidden === null || hidden === id ? "" : "hidden");
   const onClick = () => {
     return selected(id);
   };
@@ -16,6 +15,8 @@ const Card = ({ id, name, email, selected, hidden }) => {
         alt={`robot-${id}`}
         src={`https://robohash.org/${id}?200x200`}
         id={id}
+        height="300px"
+        width="300px"
       />
       <div>
         <h2>{name}</h2>
