@@ -12,6 +12,7 @@ h1,
   --color-two: #9eebcf;
   font-family: "SEGA LOGO FONT";
   font-weight: 200;
+  font-size: min(3rem, 10vw);
   background: linear-gradient(
       90deg,
       var(--color-one),
@@ -45,7 +46,7 @@ h1,
   padding: 10px;
   background: linear-gradient(
     to left,
-    rgba(7, 27, 82, 1) 0%,
-    rgba(0, 128, 128, 1) 100%
+    #071b52,
+    teal
   );
 }

@@ -10,7 +10,8 @@
     {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
       "src": "logo512.png",
@@ -20,6 +21,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "rgba(7, 27, 82, 1)",
-  "background_color": "#rgba(7, 27, 82, 1)"
+  "theme_color": "#071b52",
+  "background_color": "#071b52"
 }

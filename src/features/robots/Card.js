@@ -15,6 +15,7 @@ const Card = ({ id, name, email, selected, hidden }) => {
         alt={`robot-${id}`}
         src={`https://robohash.org/${id}?size=200x200`}
         id={id}
+        loading="lazy"
         height="200px"
         width="200px"
       />
