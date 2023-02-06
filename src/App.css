@@ -12,7 +12,7 @@ h1,
   --color-two: #9eebcf;
   font-family: "SEGA LOGO FONT";
   font-weight: 200;
-  font-size: min(3rem, 10vw);
+  font-size: min(3rem, 10vw) !important;
   background: linear-gradient(
       90deg,
       var(--color-one),
