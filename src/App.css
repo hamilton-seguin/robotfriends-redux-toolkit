@@ -2,16 +2,38 @@
   font-family: "SEGA LOGO FONT";
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   src: local("SEGA LOGO FONT"), url("SEGA.woff") format("woff");
 }
 
 h1,
 .mv3.h1 {
+  --color-one: #0ccac4;
+  --color-two: #9eebcf;
   font-family: "SEGA LOGO FONT";
   font-weight: 200;
-  color: #0ccac4;
+  background: linear-gradient(
+      90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-one)
+    )
+    0 0 / 400% 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  h1 {
+    animation: move-bg 12s linear infinite;
+  }
+  @keyframes move-bg {
+    to {
+      background-position: 400% 0;
+    }
+  }
+}
 .hidden {
   display: none !important;
 }
@@ -21,5 +43,9 @@ h1,
   top: 0;
   z-index: 5;
   padding: 10px;
-  background: linear-gradient(to left, rgba(7,27,82,1) 0%, rgba(0,128,128,1) 100%);
+  background: linear-gradient(
+    to left,
+    rgba(7, 27, 82, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  );
 }

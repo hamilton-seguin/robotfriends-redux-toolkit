@@ -12,7 +12,7 @@ import "tachyons";
 
 const App = () => {
   return (
-    <div className="tc mw-100">
+    <div className="tc">
       <Scroll>
         <Header />
         <Counter />
