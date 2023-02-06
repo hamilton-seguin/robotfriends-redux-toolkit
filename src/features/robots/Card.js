@@ -13,10 +13,10 @@ const Card = ({ id, name, email, selected, hidden }) => {
     >
       <img
         alt={`robot-${id}`}
-        src={`https://robohash.org/${id}?200x200`}
+        src={`https://robohash.org/${id}?size=200x200`}
         id={id}
-        height="300px"
-        width="300px"
+        height="200px"
+        width="200px"
       />
       <div>
         <h2>{name}</h2>
