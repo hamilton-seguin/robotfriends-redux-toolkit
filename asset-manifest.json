@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/robotfriends-redux-toolkit/static/css/main.2bf547f6.css",
+    "main.css": "/robotfriends-redux-toolkit/static/css/main.ba04a8cc.css",
     "main.js": "/robotfriends-redux-toolkit/static/js/main.b932fa24.js",
     "static/js/787.bbfb8292.chunk.js": "/robotfriends-redux-toolkit/static/js/787.bbfb8292.chunk.js",
     "static/media/SEGA.woff": "/robotfriends-redux-toolkit/static/media/SEGA.47b4bfa94ef243af4a5b.woff",
     "index.html": "/robotfriends-redux-toolkit/index.html",
-    "main.2bf547f6.css.map": "/robotfriends-redux-toolkit/static/css/main.2bf547f6.css.map",
+    "main.ba04a8cc.css.map": "/robotfriends-redux-toolkit/static/css/main.ba04a8cc.css.map",
     "main.b932fa24.js.map": "/robotfriends-redux-toolkit/static/js/main.b932fa24.js.map",
     "787.bbfb8292.chunk.js.map": "/robotfriends-redux-toolkit/static/js/787.bbfb8292.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2bf547f6.css",
+    "static/css/main.ba04a8cc.css",
     "static/js/main.b932fa24.js"
   ]
 }
