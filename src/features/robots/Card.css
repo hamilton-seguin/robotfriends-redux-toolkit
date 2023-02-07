@@ -1,3 +1,6 @@
+.card{
+  min-width: 16rem;
+}
 .cardInfo h2,
 .cardInfo p {
   text-overflow: ellipsis;

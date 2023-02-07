@@ -41,8 +41,7 @@ const CardList = () => {
               <Card
                 key={robots[i].id}
                 id={robots[i].id}
-                name={robots[i].name}
-                email={robots[i].email}
+                robot={robots[i]}
                 selected={selectCard}
                 hidden={selected}
               />
