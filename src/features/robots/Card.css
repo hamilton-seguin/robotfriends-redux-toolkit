@@ -1,0 +1,10 @@
+.cardInfo h2,
+.cardInfo p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.hidden {
+  display: none !important;
+}

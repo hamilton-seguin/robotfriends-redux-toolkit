@@ -1,18 +1,15 @@
 import React from "react";
+import "./Card.css";
 
 const Card = ({ id, name, email, selected, hidden }) => {
   const isHidden = () => (hidden === null || hidden === id ? "" : "hidden");
-  const onClick = () => {
-    return selected(id);
-    };
-  const lazyOrAuto = (id) => {
-    if(id>6){return "lazy"}
-    return "auto"
-  }
-  
+  const onClick = () => selected(id);
+  const lazyOrAuto = (id) => (id > 6 ? "lazy" : "auto");
+  const width = () =>(hidden ? "" : "w5")
+
   return (
     <div
-      className={`bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5 card ${isHidden()}`}
+      className={`bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5 ${width()} ${isHidden()}`}
       onClick={onClick}
     >
       <img
@@ -23,7 +20,7 @@ const Card = ({ id, name, email, selected, hidden }) => {
         height={"200px"}
         width={"200px"}
       />
-      <div>
+      <div className="cardInfo">
         <h2>{name}</h2>
         <p>{email}</p>
       </div>

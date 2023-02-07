@@ -35,18 +35,11 @@ h1,
     }
   }
 }
-.hidden {
-  display: none !important;
-}
 
 .scroll {
   position: sticky;
   top: 0;
   z-index: 5;
   padding: 10px;
-  background: linear-gradient(
-    to left,
-    #071b52,
-    teal
-  );
+  background: linear-gradient(to left, #071b52, teal);
 }
