@@ -1,9 +1,9 @@
 import React from "react";
 import "./Card.css";
+import CardDetail from "./CardDetails";
 
 const Card = ({ id, robot, selected, hidden }) => {
   const isHidden = () => (hidden === null || hidden === id ? "" : "hidden");
-  const hideExtendedInfo = () => (hidden === id ? "" : "hidden");
   const onClick = () => selected(id);
   const lazyOrAuto = (id) => (id > 6 ? "lazy" : "auto");
   const width = () => (hidden ? "" : "w5");
@@ -25,13 +25,7 @@ const Card = ({ id, robot, selected, hidden }) => {
         <h2>{robot.name}</h2>
         <p>{robot.email}</p>
       </div>
-      <div className={`${hideExtendedInfo()}`}>
-        <br />
-        <p><b>Company:</b> {robot.company.name}</p>
-        <p><b>Location:</b> {robot.address.city}</p>
-        <p><b>Catch phrase: </b></p>
-        <em>{robot.company.catchPhrase}</em>
-      </div>
+      <CardDetail hidden={hidden} robot={robot} />
     </div>
   );
 };
