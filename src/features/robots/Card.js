@@ -1,10 +1,10 @@
 import React from "react";
 import "./Card.css";
-import CardDetail from "./CardDetails";
+import CardDetails from "./CardDetails";
 
 const Card = ({ id, robot, selected, hidden }) => {
   const isHidden = () => (hidden === null || hidden === id ? "" : "hidden");
-  const onClick = () => selected(id);
+  const onClick = () => () => selected(id);
   const lazyOrAuto = (id) => (id > 6 ? "lazy" : "auto");
   const width = () => (hidden ? "" : "w5");
 
@@ -21,11 +21,11 @@ const Card = ({ id, robot, selected, hidden }) => {
         height={"200px"}
         width={"200px"}
       />
-      <div className="cardInfo">
+      <div className="cardInfo" id="cardInfo">
         <h2>{robot.name}</h2>
         <p>{robot.email}</p>
       </div>
-      <CardDetail hidden={hidden} robot={robot} />
+      <CardDetails hidden={hidden} robot={robot} />
     </div>
   );
 };

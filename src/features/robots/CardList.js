@@ -26,7 +26,8 @@ const CardList = () => {
   if (isLoading) return <h1> Loading </h1>;
   if (!isSuccess) return <h1> Oops. That is not good</h1>;
 
-  if (data) {
+  //data loaded
+  if (isSuccess) {
     const robots = data.filter((robot) => {
       return robot.name.toLowerCase().includes(searchField.toLowerCase());
     }); 

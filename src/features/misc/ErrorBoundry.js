@@ -14,7 +14,7 @@ class ErrorBoundry extends React.Component {
 
   render() {
     if (this.state.hasError) {
-      return <h1> Oops. That is not good</h1>;
+      return <h1> Oops. That is not good, from ErrorBoundry</h1>;
     }
     return this.props.children;
   }

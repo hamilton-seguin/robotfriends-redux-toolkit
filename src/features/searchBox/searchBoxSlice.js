@@ -12,5 +12,5 @@ export const searchSlice = createSlice({
   },
 });
 
-export const { searchFieldChange} = searchSlice.actions
-export default searchSlice.reducer
+export const { searchFieldChange } = searchSlice.actions;
+export default searchSlice.reducer;

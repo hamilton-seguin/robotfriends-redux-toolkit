@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shows extra details of Card component 1`] = `
+<div
+  className="hidden"
+>
+  <br />
+  <p>
+    <b>
+      Company:
+    </b>
+     
+    zzz
+  </p>
+  <p>
+    <b>
+      Location:
+    </b>
+     
+    bla
+     
+  </p>
+  <p>
+    <b>
+      Catch phrase: 
+    </b>
+  </p>
+  <em />
+</div>
+`;

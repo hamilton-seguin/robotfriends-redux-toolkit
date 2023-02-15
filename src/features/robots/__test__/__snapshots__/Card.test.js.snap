@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`hides other cards when clicked 1`] = `
+<h2>
+  Jeanne Graham
+</h2>
+`;
