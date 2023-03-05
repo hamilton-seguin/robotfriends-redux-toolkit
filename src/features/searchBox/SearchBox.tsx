@@ -1,9 +1,9 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useAppDispatch } from "../../app/hook";
 import { searchFieldChange } from "./searchBoxSlice";
 
 const SearchBox = () => {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   return (
     <div className="pa2">

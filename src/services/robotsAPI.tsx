@@ -1,4 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { IRobot } from "../features/robots/CardList";
 
 export const robotsApi = createApi({
   reducerPath: "robotsApi",
@@ -6,7 +7,7 @@ export const robotsApi = createApi({
     baseUrl: "https://jsonplaceholder.typicode.com/",
   }),
   endpoints: (builder) => ({
-    getRobotsList: builder.query({
+    getRobotsList: builder.query<[IRobot], void>({
       query: () => "users/",
     }),
   }),

@@ -12,9 +12,9 @@ jest.mock("../CardDetails", () => () => {
 });
 
 const cardProps = {
+  id: 69,
   robot: {
     name: "Jeanne Graham",
-    id: 1,
     email: "Sincere@april.biz",
   },
 };

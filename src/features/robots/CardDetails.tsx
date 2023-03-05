@@ -1,6 +1,12 @@
 import React from "react";
+import { IRobot } from "./CardList";
 
-const CardDetail = ({ hidden, robot }) => {
+
+interface ICardDetailProps {
+  hidden: number | null,
+  robot: IRobot
+}
+const CardDetail = ({ hidden, robot }: ICardDetailProps) => {
   const hideExtendedInfo = () => (hidden === robot.id ? "" : "hidden");
 
   return (
@@ -14,4 +20,4 @@ const CardDetail = ({ hidden, robot }) => {
   );
 };
 
- export default CardDetail;
+export default CardDetail;

@@ -6,7 +6,7 @@ import counterReducer from "../features/counter/counterSlice";
 import searchRobotsReducer from "../features/searchBox/searchBoxSlice"
 
 
-const rootReducer =combineReducers({
+const rootReducer = combineReducers({
   counter: counterReducer,
   searchRobots: searchRobotsReducer,
   [robotsApi.reducerPath]: robotsApi.reducer,
@@ -20,3 +20,6 @@ export const store = configureStore({
 });
 
 setupListeners(store.dispatch);
+
+export type RootState = ReturnType<typeof store.getState>
+export type AppDispatch = typeof store.dispatch

@@ -1,20 +1,33 @@
 import React, { useState, useEffect } from "react";
-import { useSelector } from "react-redux";
+import { useAppSelector } from "../../app/hook";
 
 import { useGetRobotsListQuery } from "../../services/robotsAPI";
 import Card from "./Card";
+
+export interface IRobot {
+  name: string,
+  id: number,
+  email: string,
+  address: {
+    city: string
+  }
+  company: {
+    name: string,
+    catchPhrase: string,
+  }
+}
 
 const CardList = () => {
   //RTK Query
   const { data, isLoading, isSuccess } = useGetRobotsListQuery();
 
   //Searchfield state
-  const searchField = useSelector((state) => state.searchRobots.searchField);
+  const searchField = useAppSelector((state) => state.searchRobots.searchField);
 
   //which card is selected from Card props
-  const [selected, setSelected] = useState(null);
-  const selectCard = (selectedCard) => {
-    selected ? setSelected(null) : setSelected(selectedCard);
+  const [selected, setSelected] = useState<number | null>(null);
+  const selectCard = (selectedCardId: number) => {
+    selected ? setSelected(null) : setSelected(selectedCardId);
     return selected;
   };
 
@@ -28,16 +41,16 @@ const CardList = () => {
 
   //data loaded
   if (isSuccess) {
-    const robots = data.filter((robot) => {
+    const robots = data.filter((robot: IRobot) => {
       return robot.name.toLowerCase().includes(searchField.toLowerCase());
-    }); 
+    });
     if (!robots.length) {
       return <h1 className="pv6">No robots with that name</h1>;
     }
     return (
       <>
         <div className="mv3">
-          {robots.map((user, i) => {
+          {robots.map((user: IRobot, i: number) => {
             return (
               <Card
                 key={robots[i].id}
@@ -51,6 +64,8 @@ const CardList = () => {
         </div>
       </>
     );
+  } else {
+    return <></>
   }
 };
 
