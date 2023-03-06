@@ -5,16 +5,16 @@ import { useGetRobotsListQuery } from "../../services/robotsAPI";
 import Card from "./Card";
 
 export interface IRobot {
-  name: string,
-  id: number,
-  email: string,
+  name: string;
+  id: number;
+  email: string;
   address: {
-    city: string
-  }
+    city: string;
+  };
   company: {
-    name: string,
-    catchPhrase: string,
-  }
+    name: string;
+    catchPhrase: string;
+  };
 }
 
 const CardList = () => {
@@ -65,7 +65,7 @@ const CardList = () => {
       </>
     );
   } else {
-    return <></>
+    return <></>;
   }
 };
 

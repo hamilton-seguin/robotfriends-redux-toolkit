@@ -4,10 +4,10 @@ import CardDetails from "./CardDetails";
 import { IRobot } from "./CardList";
 
 interface ICardProps {
-  id: number,
-  robot: IRobot,
-  selected: (id: number) => number | null,
-  hidden: number | null,
+  id: number;
+  robot: IRobot;
+  selected: (id: number) => number | null;
+  hidden: number | null;
 }
 
 const Card = ({ id, robot, selected, hidden }: ICardProps) => {
@@ -24,7 +24,7 @@ const Card = ({ id, robot, selected, hidden }: ICardProps) => {
       <img
         alt={`robot-${id}`}
         src={`https://robohash.org/${id}?size=200x200`}
-        id={(id).toString()}
+        id={id.toString()}
         loading={lazyOrAuto(id)}
         height={"200px"}
         width={"200px"}

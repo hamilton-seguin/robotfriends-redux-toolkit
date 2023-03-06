@@ -1,15 +1,11 @@
 import { FC, ReactNode } from "react";
 
 interface Props {
-  children: ReactNode
+  children: ReactNode;
 }
 
 const Scroll: FC<Props> = ({ children }) => {
-  return (
-    <div className="scroll bb bw2">
-      {children}
-    </div>
-  );
+  return <div className="scroll bb bw2">{children}</div>;
 };
 
 export default Scroll;
