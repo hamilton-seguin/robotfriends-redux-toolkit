@@ -1,7 +1,7 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { setupListeners } from "@reduxjs/toolkit/dist/query";
 
-import { robotsApi } from "../services/robotsAPI";
+import { robotsApi } from "./robotsAPI";
 import counterReducer from "../features/counter/counterSlice";
 import searchRobotsReducer from "../features/searchBox/searchBoxSlice";
 

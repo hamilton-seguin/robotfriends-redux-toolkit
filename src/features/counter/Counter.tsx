@@ -1,5 +1,5 @@
 import React from "react";
-import { useAppSelector, useAppDispatch } from "../../app/hook";
+import { useAppSelector, useAppDispatch } from "../../services/hook";
 import { increment, decrement, reset } from "./counterSlice";
 
 const Counter = () => {

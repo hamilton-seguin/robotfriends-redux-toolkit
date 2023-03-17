@@ -1,5 +1,5 @@
 import React from "react";
-import { useAppDispatch } from "../../app/hook";
+import { useAppDispatch } from "../../services/hook";
 import { searchFieldChange } from "./searchBoxSlice";
 
 const SearchBox = () => {

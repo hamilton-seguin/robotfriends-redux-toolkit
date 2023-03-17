@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useAppSelector } from "../../app/hook";
+import { useAppSelector } from "../../services/hook";
 
 import { useGetRobotsListQuery } from "../../services/robotsAPI";
 import Card from "./Card";
