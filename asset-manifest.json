@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/robotfriends-redux-toolkit/static/css/main.4041e7a8.css",
-    "main.js": "/robotfriends-redux-toolkit/static/js/main.6915dcd6.js",
+    "main.css": "/robotfriends-redux-toolkit/static/css/main.ede4bbb8.css",
+    "main.js": "/robotfriends-redux-toolkit/static/js/main.cdf99472.js",
     "static/js/787.bbfb8292.chunk.js": "/robotfriends-redux-toolkit/static/js/787.bbfb8292.chunk.js",
     "service-worker.js": "/robotfriends-redux-toolkit/service-worker.js",
     "static/media/SEGA.woff": "/robotfriends-redux-toolkit/static/media/SEGA.47b4bfa94ef243af4a5b.woff",
     "index.html": "/robotfriends-redux-toolkit/index.html",
-    "main.4041e7a8.css.map": "/robotfriends-redux-toolkit/static/css/main.4041e7a8.css.map",
-    "main.6915dcd6.js.map": "/robotfriends-redux-toolkit/static/js/main.6915dcd6.js.map",
+    "main.ede4bbb8.css.map": "/robotfriends-redux-toolkit/static/css/main.ede4bbb8.css.map",
+    "main.cdf99472.js.map": "/robotfriends-redux-toolkit/static/js/main.cdf99472.js.map",
     "787.bbfb8292.chunk.js.map": "/robotfriends-redux-toolkit/static/js/787.bbfb8292.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4041e7a8.css",
-    "static/js/main.6915dcd6.js"
+    "static/css/main.ede4bbb8.css",
+    "static/js/main.cdf99472.js"
   ]
 }
